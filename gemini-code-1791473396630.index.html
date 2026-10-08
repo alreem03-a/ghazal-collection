@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>غزل كولكشن | Ghazal Collection - عبايات فاخرة وحسب الطلب</title>
+  
+  <!-- الخطوط والأيقونات -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #0d0e10;
+      --bg-card: #16171a;
+      --bg-modal: #1c1d21;
+      --gold-primary: #C5A059;
+      --gold-hover: #e5b869;
+      --gold-light: rgba(197, 160, 89, 0.15);
+      --text-main: #f5f5f7;
+      --text-muted: #a1a1a6;
+      --border-color: rgba(197, 160, 89, 0.25);
+      --font-family: 'Tajawal', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family);
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 70px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Top Announcement / Countdown Banner */
+    .announcement-bar {
+      background: linear-gradient(90deg, #1c1d21 0%, #C5A059 50%, #1c1d21 100%);
+      color: #000;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.88rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(197, 160, 89, 0.3);
+    }
+
+    .countdown-timer {
+      display: inline-flex;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.85);
+      color: var(--gold-primary);
+      padding: 3px 12px;
+      border-radius: 15px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    /* Store Rating Summary Bar */
+    .rating-summary-bar {
+      background: rgba(197, 160, 89, 0.08);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--gold-primary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rating-stars {
+      color: #ffd700;
+      font-size: 0.8rem;
+    }
+
+    /* Brand Logo Image Style */
+    .brand-logo-img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0px 2px 6px rgba(197, 160, 89, 0.4));
+      background: #ffffff;
+      padding: 3px;
+      border-radius: 8px;
+    }
+
+    .hero-brand-logo {
+      height: 140px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 1.2rem;
+      filter: drop-shadow(0px 6px 15px rgba(197, 160, 89, 0.5));
+      background: #ffffff;
+      padding: 8px;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Navbar Header */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(13, 14, 16, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-name {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--gold-primary);
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .cart-btn {
+      position: relative;
+      background: var(--gold-light);
+      border: 1px solid var(--border-color);
+      color: var(--gold-primary);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .cart-btn:hover {
+      background: var(--gold-primary);
+      color: #000;
+    }
+
+    .cart-badge {
+      background: var(--gold-primary);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Hero Banner */
+    .hero {
+      text-align: center;
+      padding: 3.5rem 1.5rem 2.5rem;
+      background: linear-gradient(180deg, rgba(197, 160, 89, 0.12) 0%, rgba(13, 14, 16, 0) 100%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      color: var(--gold-primary);
+      margin-bottom: 0.8rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 680px;
+      margin: 0 auto 1.8rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--gold-primary);
+      color: #000;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-primary);
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+
+    .btn-outline:hover {
+      background: var(--gold-light);
+    }
+
+    .info-tags {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .info-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(197, 160, 89, 0.1);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Features Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold-primary);
+    }
+
+    .feature-card i {
+      font-size: 2rem;
+      color: var(--gold-primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .feature-card h4 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+
+    .feature-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Custom Design Section Card */
+    .custom-design-banner {
+      background: linear-gradient(135deg, rgba(197, 160, 89, 0.15) 0%, rgba(22, 23, 26, 0.9) 100%);
+      border: 1px dashed var(--gold-primary);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .custom-design-banner h3 {
+      color: var(--gold-primary);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-design-banner p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .custom-design-btn {
+      background: var(--gold-primary);
+      color: #000;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .custom-design-btn:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Main Container & Categories */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .category-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 0.6rem 1.4rem;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--gold-primary);
+      color: #000;
+      border-color: var(--gold-primary);
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 1.6rem;
+      color: var(--gold-primary);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .section-title::before, .section-title::after {
+      content: '';
+      height: 1px;
+      width: 50px;
+      background: var(--border-color);
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      border-color: var(--gold-primary);
+    }
+
+    /* Multi-Image Carousel Container */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      background-color: #111214;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .carousel-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+      cursor: zoom-in;
+    }
+
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: var(--gold-primary);
+      border: 1px solid var(--border-color);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 5;
+      transition: background 0.3s;
+    }
+
+    .carousel-arrow:hover {
+      background: var(--gold-primary);
+      color: #000;
+    }
+
+    .carousel-arrow.prev { right: 8px; }
+    .carousel-arrow.next { left: 8px; }
+
+    .carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      z-index: 5;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .dot.active {
+      background: var(--gold-primary);
+      width: 18px;
+      border-radius: 10px;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--gold-primary);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      z-index: 6;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .product-info {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      color: var(--text-main);
+    }
+
+    .product-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+      white-space: pre-line;
+    }
+
+    .price-box {
+      margin-bottom: 0.8rem;
+    }
+
+    .price-label {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--gold-primary);
+    }
+
+    .price-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .action-buttons-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .order-btn {
+      flex-grow: 1;
+      background: transparent;
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-primary);
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.3s;
+    }
+
+    .order-btn:hover {
+      background: var(--gold-primary);
+      color: #000;
+    }
+
+    .share-btn {
+      background: rgba(197, 160, 89, 0.1);
+      border: 1px solid var(--border-color);
+      color: var(--gold-primary);
+      width: 42px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .share-btn:hover {
+      background: var(--gold-primary);
+      color: #000;
+    }
+
+    /* Estimated Delivery Card in Modal */
+    .delivery-est-box {
+      background: rgba(197, 160, 89, 0.1);
+      border: 1px dashed var(--gold-primary);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 1.2rem;
+      font-size: 0.85rem;
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* LightBox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-img {
+      max-width: 90%;
+      max-height: 85vh;
+      border-radius: 12px;
+      border: 1px solid var(--gold-primary);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    /* Instagram Live Feed Grid Section */
+    .insta-section {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    .insta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 1.5rem;
+    }
+
+    .insta-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 220px;
+      border: 1px solid var(--border-color);
+    }
+
+    .insta-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .insta-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .insta-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    .insta-card:hover .insta-overlay {
+      opacity: 1;
+    }
+
+    /* Testimonials / Customer Reviews Section */
+    .reviews-section {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: right;
+      position: relative;
+    }
+
+    .review-stars {
+      color: #ffd700;
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .review-text {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .review-author {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--gold-primary);
+    }
+
+    .review-location {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* File Upload Box Styling */
+    .file-upload-wrapper {
+      border: 2px dashed var(--border-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.02);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .file-upload-wrapper:hover {
+      border-color: var(--gold-primary);
+      background: rgba(197, 160, 89, 0.05);
+    }
+
+    .image-preview-container {
+      margin-top: 10px;
+      display: none;
+      text-align: center;
+    }
+
+    .image-preview-container img {
+      max-width: 100%;
+      max-height: 180px;
+      border-radius: 8px;
+      border: 1px solid var(--gold-primary);
+    }
+
+    /* Helper Notice */
+    .wa-notice-box {
+      background: rgba(197, 160, 89, 0.12);
+      border: 1px dashed var(--gold-primary);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: var(--gold-primary);
+      text-align: right;
+    }
+
+    /* Gift Option Card */
+    .gift-option-card {
+      background: rgba(197, 160, 89, 0.08);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 12px 15px;
+      margin-bottom: 1.2rem;
+    }
+
+    .gift-checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--gold-primary);
+      font-size: 0.95rem;
+    }
+
+    .gift-checkbox-label input {
+      accent-color: var(--gold-primary);
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    /* Modal Overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-card {
+      background: var(--bg-modal);
+      border: 1px solid var(--gold-primary);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 550px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 1.5rem;
+      position: relative;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .close-modal:hover { color: var(--gold-primary); }
+
+    .modal-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-header h3 {
+      color: var(--gold-primary);
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .form-group { margin-bottom: 1.2rem; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .form-control:focus { border-color: var(--gold-primary); }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .measurements-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .size-guide-btn {
+      background: transparent;
+      border: none;
+      color: var(--gold-primary);
+      font-size: 0.8rem;
+      cursor: pointer;
+      text-decoration: underline;
+      display: inline-block;
+      margin-bottom: 0.8rem;
+    }
+
+    /* Cart Drawer */
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      left: -400px;
+      width: 380px;
+      max-width: 100%;
+      height: 100%;
+      background: var(--bg-modal);
+      border-right: 1px solid var(--border-color);
+      z-index: 1001;
+      transition: left 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .cart-drawer.active { left: 0; }
+
+    .cart-header {
+      padding: 1.2rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart-header h3 { color: var(--gold-primary); }
+
+    .cart-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+
+    .cart-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .cart-item-title {
+      font-weight: 700;
+      color: var(--gold-primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .cart-item-detail {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .remove-item {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #ff5252;
+      cursor: pointer;
+    }
+
+    .cart-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp-checkout-btn {
+      width: 100%;
+      background: #25D366;
+      color: #fff;
+      border: none;
+      padding: 0.85rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    /* FAQ Section */
+    .faq-section { margin-top: 4rem; }
+
+    .faq-accordion {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      padding: 0 1.25rem 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: none;
+      border-top: 1px solid rgba(197, 160, 89, 0.1);
+      padding-top: 0.8rem;
+    }
+
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-question i { transform: rotate(180deg); }
+
+    /* Footer */
+    .site-footer {
+      background: #090a0c;
+      border-top: 1px solid var(--border-color);
+      padding: 2.5rem 1.5rem;
+      margin-top: 5rem;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gold-primary);
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-primary);
+    }
+
+    .copyright {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #25D366;
+      color: #fff;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      z-index: 99;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .measurements-grid { grid-template-columns: 1fr; }
+      .cart-drawer { width: 100%; left: -100%; }
+      .carousel-container { height: 320px; }
+      .hero h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Countdown Offer Banner -->
+  <div class="announcement-bar">
+    <span>✨ عرض حقيقي لفترة محدودة: احصلي على خصم خاص وتفصيل حصر عند الطلب اليوم</span>
+    <div class="countdown-timer" id="countdown">08:45:12</div>
+  </div>
+
+  <!-- Store Rating Summary Bar -->
+  <div class="rating-summary-bar">
+    <div class="rating-stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <span>تقييم المتجر: <strong>4.9 / 5</strong> بناءً على أكثر من 350+ زبونة سعيدة في سلطنة عمان</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="brand-logo">
+      <img src="https://i.postimg.cc/3JjvYYL8/Whats-App-Image-2026-10-08-at-6-19-51-PM.jpg" alt="شعار غزل كولكشن" class="brand-logo-img">
+      <span class="brand-name">غزل كولكشن</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#catalog">المتجر والكتالوج</a></li>
+      <li><a href="#custom-banner">طلب تصميم خاص</a></li>
+      <li><a href="#instagram">الانستجرام</a></li>
+      <li><a href="#reviews">آراء العملاء</a></li>
+      <li><a href="#faq">الأسئلة الشائعة</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="cart-btn" onclick="toggleCart()">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>سلة الطلب</span>
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Hero Section -->
+  <header class="hero" id="home">
+    <img src="https://i.postimg.cc/3JjvYYL8/Whats-App-Image-2026-10-08-at-6-19-51-PM.jpg" alt="غزل كولكشن - Ghazal Collection" class="hero-brand-logo">
+    <h1>غزل كولكشن | أنثوية، فخامة، وتفاصيل تُصنع لكِ</h1>
+    <p>أرقى العبايات العمانية المفصّلة بدقة عالية بأجود أنواع الأقمشة، وتشكيلة حصرية جاهزة للتسليم الفوري</p>
+    
+    <div class="hero-buttons">
+      <a href="#catalog" class="btn-primary"><i class="fa-solid fa-bag-shopping"></i> تصفحي الكتالوج والطلب</a>
+      <a href="javascript:void(0)" onclick="openCustomDesignModal()" class="btn-outline"><i class="fa-solid fa-wand-magic-sparkles"></i> صممي عبايتكِ الخاصة</a>
+    </div>
+
+    <div class="info-tags">
+      <div class="info-tag">
+        <i class="fa-solid fa-bolt"></i>
+        <span>تسليم فوري لقطع محددة</span>
+      </div>
+      <div class="info-tag">
+        <i class="fa-solid fa-clock"></i>
+        <span>تفصيل خاص: 7 - 14 يوم عمل</span>
+      </div>
+      <div class="info-tag">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>جودة خياطة وأقمشة مضمونة</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- Brand Features Section -->
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fa-solid fa-scissors"></i>
+        <h4>تفصيل بحسب طلبكِ</h4>
+        <p>نُصمّم مقاساتكِ بالإنش من طول الكم، الصدر، والطول الكلي بأسلوب عماني راقٍ.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-box-open"></i>
+        <h4>قطع تسليم فوري</h4>
+        <p>عبايات ودريسات فري سايز شيك جاهزة للشحن المباشر فور تأكيد الطلب.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h4>تنفيذ تصميمكِ الخاص</h4>
+        <p>ارفعي صورة أي عباية تعجبكِ وسنقوم بتفصيلها وقصها لكِ على أعلى مستوى.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h4>خدمة زبائن مباشرة</h4>
+        <p>تواصل سلس وفعال عبر الواتساب مع تأكيد سريع للإيداع البنكي والتفاصيل.</p>
+      </div>
+    </div>
+
+    <!-- Custom Design Request Banner -->
+    <div class="custom-design-banner" id="custom-banner">
+      <h3><i class="fa-solid fa-wand-magic-sparkles"></i> هل لديكِ صورة لعباية وتريدين تنفيذها؟</h3>
+      <p>يمكنكِ الآن اختيار صورة العباية الخاصة بكِ مباشرة من هاتفك مع تحديد القماش والملاحظات وسنقوم بالرد عليكِ فوراً!</p>
+      <button class="custom-design-btn" onclick="openCustomDesignModal()">
+        <i class="fa-solid fa-camera"></i> اختاري صورة تصميمك الخاص
+      </button>
+    </div>
+
+    <!-- Category Tabs & Catalog -->
+    <div id="catalog">
+      <div class="category-tabs">
+        <button class="tab-btn active" onclick="filterCategory('all')">الكل (27 تصميم)</button>
+        <button class="tab-btn" onclick="filterCategory('ready')">⚡ التسليم الفوري</button>
+        <button class="tab-btn" onclick="filterCategory('dresses')">👗 الدريسات</button>
+        <button class="tab-btn" onclick="filterCategory('cobra')">قطعة كوبرا 🦌🔥</button>
+        <button class="tab-btn" onclick="filterCategory('jacquard')">قطعة جاكار 🤎</button>
+        <button class="tab-btn" onclick="filterCategory('makhwar')">عباة المخور 🌷</button>
+        <button class="tab-btn" onclick="filterCategory('indonesian')">كوبرا أندونيسي 🐆</button>
+        <button class="tab-btn" onclick="filterCategory('crepe')">كريب أو كوبرا 🔥</button>
+      </div>
+
+      <h2 class="section-title">كتالوج العبايات والدريسات</h2>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+
+    <!-- Instagram Live Feed Showcase -->
+    <section class="insta-section" id="instagram">
+      <h2 class="section-title"><i class="fa-brands fa-instagram"></i> تابعونا على انستجرام</h2>
+      <p style="color: var(--text-muted);">تألقي مع أحدث جلسات التصوير والتشكيلات المباشرة على حسابنا @ghazal_collection03</p>
+      
+      <div class="insta-grid">
+        <a href="https://www.instagram.com/ghazal_collection03?stkn=c2RvMTJkMGMzcWZy&utm_source=qr" target="_blank" class="insta-card">
+          <img src="https://i.postimg.cc/RVYb4jvY/Whats-App-Image-2026-10-08-at-12-54-02-PM-(2).jpg" alt="انستجرام غزل كولكشن">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </a>
+        <a href="https://www.instagram.com/ghazal_collection03?stkn=c2RvMTJkMGMzcWZy&utm_source=qr" target="_blank" class="insta-card">
+          <img src="https://i.postimg.cc/HW0m2qqy/Whats-App-Image-2026-10-08-at-2-52-06-PM.jpg" alt="انستجرام غزل كولكشن">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </a>
+        <a href="https://www.instagram.com/ghazal_collection03?stkn=c2RvMTJkMGMzcWZy&utm_source=qr" target="_blank" class="insta-card">
+          <img src="https://i.postimg.cc/xTWP1ZCT/Whats-App-Image-2026-10-08-at-2-56-46-PM-(3).jpg" alt="انستجرام غزل كولكشن">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </a>
+        <a href="https://www.instagram.com/ghazal_collection03?stkn=c2RvMTJkMGMzcWZy&utm_source=qr" target="_blank" class="insta-card">
+          <img src="https://i.postimg.cc/yd1Fg4cc/Whats-App-Image-2026-10-08-at-3-27-41-PM-(1).jpg" alt="انستجرام غزل كولكشن">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </a>
+      </div>
+
+      <a href="https://www.instagram.com/ghazal_collection03?stkn=c2RvMTJkMGMzcWZy&utm_source=qr" target="_blank" class="btn-outline" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 8px;">
+        <i class="fa-brands fa-instagram"></i> زيارة صفحتنا الرسمية على انستجرام
+      </a>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section" id="reviews">
+      <h2 class="section-title">آراء وانطباعات زبونات غزل كولكشن</h2>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">نفتخر بتقديم الأفضل دائماً، وهذه بعض تقييمات زبوناتنا العزيزات:</p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"ما شاء الله العباية تجنن والخياطة جداً نظيفة ومتقنة! القماش سواد حلك وراقي وبإذن الله مو آخر تعامل."</p>
+          <div class="review-author">أم جاسم</div>
+          <div class="review-location">مسقط، عمان</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"وصلني دريس التسليم الفوري القياس كان مضبوط بالضبط والمادة ناعمة جداً. التوصيل كان سريع والتعامل في الواتساب راقي."</p>
+          <div class="review-author">شيخة البوسعيدي</div>
+          <div class="review-location">صحار، عمان</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"رسلت لهم صورة عباية عاجبتني بالانستقرام وضبطوها لي أحسن من الصورة بكثير! مشكورين غزل كولكشن."</p>
+          <div class="review-author">فاطمة البلوشي</div>
+          <div class="review-location">صلالة، عمان</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <h2 class="section-title">الأسئلة الشائعة والاستفسارات</h2>
+      <div class="faq-accordion">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>ما الفرق بين قطع التفصيل وقطع التسليم الفوري؟</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            قطع التسليم الفوري تكون جاهزة للشحن وتصلكِ خلال 5 - 7 أيام عمل فقط، وتأتي بقياس فري سايز. أما قطع التفصيل فتستغرق من 7 إلى 14 يوم عمل.
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>كيف يمكنني تحديد مقاس الدريسات أو قطع التسليم الفوري؟</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            قطع التسليم الفوري والدريسات تأتي بتصميم فري سايز مريح لجميع الأجسام، وتحتاجين فقط لاختيار الطول الكلي المناسب لكِ بالإنش.
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>كيف يمكنني تنفيذ تصميم خاص من صورة عندي؟</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            يمكنكِ الضغط على زر "اختاري صورة تصميمك الخاص" في أعلى الصفحة، واختيار الصورة مباشرة من هاتفكِ مع تحديد القماش والمقاسات.
+          </div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>ما هي طريقة الدفع وتأكيد الطلب؟</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            الدفع مسبق عبر التحويل والإيداع البنكي المباشر، ويتم إرفاق صورة الإيصال في المحادثة عبر الواتساب لتأكيد الشحن أو بدء التفصيل.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Image LightBox Modal (Zoom In) -->
+  <div class="lightbox-modal" id="lightBoxModal" onclick="closeLightBox()">
+    <img id="lightBoxImg" class="lightbox-img" src="" alt="معاينة الصورة بملء الشاشة">
+  </div>
+
+  <!-- Tailoring Modal -->
+  <div class="modal-overlay" id="tailoringModal">
+    <div class="modal-card">
+      <button class="close-modal" onclick="closeTailoringModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h3 id="modalProductTitle">تحديد القياس والطلب</h3>
+        <p id="modalSubTitle">أدخلي قياساتكِ بالإنش (Inches)</p>
+      </div>
+
+      <!-- Estimated Delivery Date Box -->
+      <div class="delivery-est-box" id="deliveryEstBox">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span id="deliveryEstText">التوصيل المتوقع خلال: 5 - 7 أيام عمل</span>
+      </div>
+
+      <form id="tailoringForm" onsubmit="submitTailoringForm(event)">
+        
+        <!-- Full Custom Measurements -->
+        <div id="fullMeasurementsGroup">
+          <div class="measurements-grid">
+            <div class="form-group">
+              <label>طول الكم (من نص الرقبة)</label>
+              <input type="number" step="0.5" class="form-control" id="sleeveLength" placeholder="مثال: 28">
+            </div>
+            <div class="form-group">
+              <label>محيط الصدر</label>
+              <input type="number" step="0.5" class="form-control" id="bustCirc" placeholder="مثال: 42">
+            </div>
+            <div class="form-group">
+              <label>الطول الكلي</label>
+              <input type="number" step="0.5" class="form-control" id="totalLengthFull" placeholder="مثال: 56">
+            </div>
+          </div>
+          <button type="button" class="size-guide-btn" onclick="alert('إرشادات المقاس:\n- طول الكم: ابدئي من منتصف خلف الرقبة مروراً بالكتف وصولاً للرسغ.\n- الصدر: قياس الدورة بالكامل.\n- الطول: من الكتف لأسفل القدمين.')">
+            <i class="fa-solid fa-circle-info"></i> كيفية أخذ القياسات؟
+          </button>
+        </div>
+
+        <!-- Quick Select Length Only -->
+        <div id="quickLengthGroup" style="display: none;">
+          <div class="form-group">
+            <label>اختر الطول الكلي المناسب (بالإنش)</label>
+            <select class="form-control" id="totalLengthQuick" style="background: #25272c; cursor: pointer;">
+              <option value="50">50 إنش</option>
+              <option value="52">52 إنش</option>
+              <option value="54" selected>54 إنش</option>
+              <option value="56">56 إنش</option>
+              <option value="58">58 إنش</option>
+              <option value="60">60 إنش</option>
+            </select>
+            <p style="font-size: 0.8rem; color: var(--gold-primary); margin-top: 6px;">* باقي المقاسات تجي فري سايز (Free Size) مريحة تناسب الجميع</p>
+          </div>
+        </div>
+
+        <!-- Gift Packaging Option -->
+        <div class="gift-option-card">
+          <label class="gift-checkbox-label">
+            <input type="checkbox" id="giftPackaging" onchange="toggleGiftMsgBox(this)">
+            <span><i class="fa-solid fa-gift"></i> إضافة تغليف هدية فاخر مع بطاقة إهداء (مجاناً)</span>
+          </label>
+          <div id="giftMsgContainer" style="display: none; margin-top: 10px;">
+            <input type="text" class="form-control" id="giftCardMsg" placeholder="اكتبي النص المراد طباعته على بطاقة الإهداء...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>ملاحظات إضافية والتعديلات المطلوبة</label>
+          <textarea class="form-control" id="designNotes" placeholder="مثال: اختيار لون محدد، إضافة أزرار طقطق، إلخ..."></textarea>
+        </div>
+
+        <button type="submit" class="order-btn" style="background: var(--gold-primary); color: #000;">
+          <i class="fa-solid fa-check"></i> إضافتها لسلة الطلب
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom Design Modal -->
+  <div class="modal-overlay" id="customDesignModal">
+    <div class="modal-card">
+      <button class="close-modal" onclick="closeCustomDesignModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h3>طلب تفصيل تصميم خاص</h3>
+        <p>حدد اختياراتكِ وارفعي صورة العباية من استوديو هاتفكِ</p>
+      </div>
+      <form onsubmit="submitCustomDesign(event)">
+        
+        <!-- File Upload Section -->
+        <div class="form-group">
+          <label>صورة العباية (اختاري ملف الصورة من جهازكِ)</label>
+          <div class="file-upload-wrapper" onclick="document.getElementById('customImgFile').click()">
+            <i class="fa-solid fa-cloud-arrow-up" style="font-size: 2rem; color: var(--gold-primary); margin-bottom: 8px; display: block;"></i>
+            <span id="uploadLabelText" style="font-size: 0.9rem; font-weight: 600; color: var(--text-main);">اضغطي هنا لاختيار صورة العباية</span>
+            <input type="file" id="customImgFile" accept="image/*" style="display: none;" onchange="previewUploadedImage(this)">
+          </div>
+          <div class="image-preview-container" id="previewContainer">
+            <img id="imagePreview" src="" alt="معاينة الصورة المرفوعة">
+          </div>
+          <div class="wa-notice-box">
+            <i class="fa-solid fa-paperclip"></i> <strong>ملاحظة:</strong> سيتم فتح محادثة الواتساب بالنص الجاهز فوراً، يرجى إرفاق الصورة المختارة عبر زر المرفقات 📎 بالواتساب.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>نوع القماش المفضل</label>
+          <input type="text" class="form-control" id="customFabric" placeholder="مثال: كريب سعودي، حرير، قطعة كوبرا..." required>
+        </div>
+        
+        <div class="measurements-grid">
+          <div class="form-group">
+            <label>طول الكم (من نص الرقبة)</label>
+            <input type="number" step="0.5" class="form-control" id="customSleeve" placeholder="28">
+          </div>
+          <div class="form-group">
+            <label>محيط الصدر</label>
+            <input type="number" step="0.5" class="form-control" id="customBust" placeholder="42">
+          </div>
+          <div class="form-group">
+            <label>الطول الكلي</label>
+            <input type="number" step="0.5" class="form-control" id="customLength" placeholder="56">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>ملاحظات إضافية والتغييرات المطلوب تنفيذها</label>
+          <textarea class="form-control" id="customNotes" placeholder="اكتبي أي تفاصيل تودين تعديلها على تصميم الصورة..."></textarea>
+        </div>
+        
+        <button type="submit" class="whatsapp-checkout-btn">
+          <i class="fa-brands fa-whatsapp"></i> إرسال التفاصيل وفتح الواتساب لإرفاق الصورة
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>سلة الطلبات</h3>
+      <button class="close-modal" style="position:static;" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-body" id="cartItemsContainer"></div>
+    <div class="cart-footer">
+      <div style="margin-bottom: 1rem; font-size: 0.8rem; color: var(--gold-primary); background: rgba(197, 160, 89, 0.1); padding: 8px; border-radius: 6px;">
+        <i class="fa-solid fa-info-circle"></i> يرجى إرفاق صورة إيصال التحويل البنكي فور الانتقال للمحادثة.
+      </div>
+      <button class="whatsapp-checkout-btn" onclick="checkoutToWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i> إرسال الطلب وإرفاق الإيصال عبر الواتساب
+      </button>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="https://i.postimg.cc/3JjvYYL8/Whats-App-Image-2026-10-08-at-6-19-51-PM.jpg" alt="غزل كولكشن" style="height: 40px; width: auto; background:#fff; padding:3px; border-radius:6px;">
+        <span>غزل كولكشن | Ghazal Collection</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#catalog">كتالوج العبايات</a>
+        <a href="#custom-banner">طلب تصميم خاص</a>
+        <a href="#instagram">الانستجرام</a>
+        <a href="#reviews">آراء العملاء</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </div>
+
+      <p class="copyright">جميع الحقوق محفوظة © 2026 - متجر غزل كولكشن للعبايات الفاخرة</p>
+    </div>
+  </footer>
+
+  <!-- Floating Direct WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=96893991279&text=%D1%83%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA%20%D8%BA%D8%B2%D9%82%20%D9%83%D9%88%D9%84%D9%83%D8%B4%D9%86" target="_blank" class="floating-wa" title="تواصل مباشر عبر الواتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const whatsappNumber = "96893991279";
+
+    // Countdown Timer Logic
+    function startCountdown() {
+      let duration = 8 * 3600 + 45 * 60 + 12;
+      const display = document.getElementById('countdown');
+      setInterval(() => {
+        let hours = Math.floor(duration / 3600);
+        let minutes = Math.floor((duration % 3600) / 60);
+        let seconds = duration % 60;
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = hours + ":" + minutes + ":" + seconds;
+        if (--duration < 0) duration = 8 * 3600;
+      }, 1000);
+    }
+    startCountdown();
+
+    // Captions
+    const captionCobra = "قطعة كوبرا 🦌🔥\nتتوفر تفصيل باللون الأسود وألوان اخرى نفس ما موضح في البوست🤎💜💛🧡💙🤍🩶🩵❤️🩷💚🖤";
+    const captionJacquard = "تفاصيل العباه :\nقطعة جاكار\nتتوفر باللون الأسود وألوان اخرى نفس ما موضح في البوست 🤎💜💛🧡💙🤍🩶🩵❤️🩷💚🖤\nبالنسبه لكسفة الرقبه تجي من جهة وحدة";
+    const captionMakhwar = "تفاصيل العباه :\nعباة المخور 🌷🎀💕\nقماش شيفون مع جزء دانتيل (تيلي) نفس الي موضح في الصور\nتتوفر باللون الأسود فقط 🖤";
+    const captionIndonesian = "قطعة كوبرا أندونيسي\nتتوفر باللون الأسود فقط 🖤\nمع اختيار لون الكم والصدر نفس ما موضح في البوست 🐆";
+    const captionCrepe = "قطعة كريب او كوبرا 🔥🔥\nتتوفر باللون الأسود مع تغيير لون الكم والجوانب نفس ما موضح في البوست 🖤";
+    const captionReady = "تسليم فوري ⚡\nعباية فاخرة جاهزة للشحن الفوري\nقياس: فري سايز (Free Size) - يتطلب اختيار الطول الكلي فقط";
+    const captionDress = "دريس راقي 👗✨\nالسعر : 6.500 ر.ع.\nقياس: فري سايز (Free Size) - يتطلب اختيار الطول الكلي فقط";
+
+    // Complete Catalog (27 Items)
+    const products = [
+      // --- Ready to Ship ---
+      { id: 101, title: "عباية تسليم فوري - 1", category: "ready", priceText: "14.000 - 15.000 ر.ع.", desc: captionReady, isQuickSize: true, badge: "تسليم فوري ⚡", images: ["https://i.postimg.cc/y6TCsRyx/Whats-App-Image-2026-10-08-at-4-56-42-PM.jpg"] },
+      { id: 102, title: "عباية تسليم فوري - 2", category: "ready", priceText: "14.000 - 15.000 ر.ع.", desc: captionReady, isQuickSize: true, badge: "تسليم فوري ⚡", images: ["https://i.postimg.cc/8z9qtmNL/Whats-App-Image-2026-10-08-at-4-56-42-PM-(6).jpg"] },
+      { id: 103, title: "عباية تسليم فوري - 3", category: "ready", priceText: "14.000 - 15.000 ر.ع.", desc: captionReady, isQuickSize: true, badge: "تسليم فوري ⚡", images: ["https://i.postimg.cc/cHNPN1KB/Whats-App-Image-2026-10-08-at-4-56-42-PM-(5).jpg"] },
+      { id: 104, title: "عباية تسليم فوري - 4", category: "ready", priceText: "14.000 - 15.000 ر.ع.", desc: captionReady, isQuickSize: true, badge: "تسليم فوري ⚡", images: ["https://i.postimg.cc/fy8PXx8D/Whats-App-Image-2026-10-08-at-4-56-42-PM-(4).jpg"] },
+      { id: 105, title: "عباية تسليم فوري - 5", category: "ready", priceText: "14.000 - 15.000 ر.ع.", desc: captionReady, isQuickSize: true, badge: "تسليم فوري ⚡", images: ["https://i.postimg.cc/HkcNc8XQ/Whats-App-Image-2026-10-08-at-4-56-42-PM-(3).jpg"] },
+      { id: 106, title: "عباية تسليم فوري - 6", category: "ready", priceText: "14.000 - 15.000 ر.ع.", desc: captionReady, isQuickSize: true, badge: "تسليم فوري ⚡", images: ["https://i.postimg.cc/0N7HZgVL/Whats-App-Image-2026-10-08-at-4-56-42-PM-(2).jpg"] },
+      { id: 107, title: "عباية تسليم فوري - 7", category: "ready", priceText: "14.000 - 15.000 ر.ع.", desc: captionReady, isQuickSize: true, badge: "تسليم فوري ⚡", images: ["https://i.postimg.cc/BbnYqjJq/Whats-App-Image-2026-10-08-at-4-56-42-PM-(1).jpg"] },
+
+      // --- Dresses ---
+      { id: 201, title: "دريس راقي - 1", category: "dresses", priceText: "6.500 ر.ع.", desc: captionDress, isQuickSize: true, badge: "دريس 👗", images: ["https://i.postimg.cc/QCK7kDbV/Whats-App-Image-2026-10-08-at-4-57-11-PM-(1).jpg"] },
+      { id: 202, title: "دريس راقي - 2", category: "dresses", priceText: "6.500 ر.ع.", desc: captionDress, isQuickSize: true, badge: "دريس 👗", images: ["https://i.postimg.cc/nVXSwQST/Whats-App-Image-2026-10-08-at-4-57-11-PM.jpg"] },
+
+      // --- Tailored Cobra Group ---
+      { id: 1, title: "عباية قطعة كوبرا - 1", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا 🦌", images: ["https://i.postimg.cc/RVYb4jvY/Whats-App-Image-2026-10-08-at-12-54-02-PM-(2).jpg", "https://i.postimg.cc/DySBjBqT/Whats-App-Image-2026-10-08-at-12-54-02-PM-(1).jpg", "https://i.postimg.cc/13xcWPmZ/Whats-App-Image-2026-10-08-at-12-54-02-PM.jpg", "https://i.postimg.cc/Y0GY3DTN/Whats-App-Image-2026-10-08-at-12-54-02-PM-(3).jpg"] },
+      { id: 2, title: "عباية قطعة كوبرا - 2", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا 🎨", images: ["https://i.postimg.cc/057w847P/Whats-App-Image-2026-10-08-at-1-27-32-PM.jpg", "https://i.postimg.cc/QMRFDgtH/Whats-App-Image-2026-10-08-at-1-27-33-PM-(1).jpg", "https://i.postimg.cc/CMCRyqVG/Whats-App-Image-2026-10-08-at-1-27-33-PM-(3).jpg", "https://i.postimg.cc/9Q00qgq3/Whats-App-Image-2026-10-08-at-1-27-33-PM.jpg", "https://i.postimg.cc/0jZ5z78B/Whats-App-Image-2026-10-08-at-1-27-33-PM-(2).jpg", "https://i.postimg.cc/j54t1yJK/Whats-App-Image-2026-10-08-at-1-27-33-PM-(4).jpg"] },
+      { id: 3, title: "عباية قطعة كوبرا - 3", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا ✨", images: ["https://i.postimg.cc/15pQvLb6/Whats-App-Image-2026-10-08-at-2-42-34-PM-(2).jpg", "https://i.postimg.cc/63Dk000M/Whats-App-Image-2026-10-08-at-2-42-33-PM.jpg", "https://i.postimg.cc/fTh4S8kM/Whats-App-Image-2026-10-08-at-2-42-35-PM.jpg", "https://i.postimg.cc/BnqdMtTv/Whats-App-Image-2026-10-08-at-2-42-35-PM-(1).jpg", "https://i.postimg.cc/FK68rZ29/Whats-App-Image-2026-10-08-at-2-42-34-PM-(1).jpg", "https://i.postimg.cc/Xqfzg0XN/Whats-App-Image-2026-10-08-at-2-42-34-PM.jpg"] },
+      { id: 4, title: "عباية قطعة كوبرا - 4", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا 🔥", images: ["https://i.postimg.cc/Wb9nc3R1/Whats-App-Image-2026-10-08-at-2-46-58-PM.jpg", "https://i.postimg.cc/nhyqn90W/Whats-App-Image-2026-10-08-at-2-46-58-PM-(1).jpg", "https://i.postimg.cc/8cz6ZRzd/Whats-App-Image-2026-10-08-at-2-46-58-PM-(3).jpg", "https://i.postimg.cc/rsHKg7b6/Whats-App-Image-2026-10-08-at-2-46-58-PM-(2).jpg", "https://i.postimg.cc/0QBkqDCH/Whats-App-Image-2026-10-08-at-2-46-57-PM.jpg", "https://i.postimg.cc/KcCTPMyM/Whats-App-Image-2026-10-08-at-2-46-57-PM-(1).jpg"] },
+      { id: 5, title: "عباية قطعة كوبرا - 5", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا 🤎", images: ["https://i.postimg.cc/0NJGR0xP/Whats-App-Image-2026-10-08-at-3-02-05-PM.jpg", "https://i.postimg.cc/65jC8mpt/Whats-App-Image-2026-10-08-at-3-02-05-PM-(1).jpg", "https://i.postimg.cc/0QsSggcG/Whats-App-Image-2026-10-08-at-3-02-06-PM.jpg", "https://i.postimg.cc/2yjB6QpF/Whats-App-Image-2026-10-08-at-3-02-07-PM.jpg", "https://i.postimg.cc/TYwDvJqt/Whats-App-Image-2026-10-08-at-3-02-06-PM-(1).jpg"] },
+      { id: 6, title: "عباية قطعة كوبرا - 6", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا 🖤", images: ["https://i.postimg.cc/ydD8rLzy/Whats-App-Image-2026-10-08-at-3-21-30-PM-(3).jpg", "https://i.postimg.cc/44h362PC/Whats-App-Image-2026-10-08-at-3-21-30-PM-(2).jpg", "https://i.postimg.cc/MptZ6C6C/Whats-App-Image-2026-10-08-at-3-21-30-PM.jpg", "https://i.postimg.cc/RFJvTq7r/Whats-App-Image-2026-10-08-at-3-21-30-PM-(1).jpg", "https://i.postimg.cc/65XBdWTr/Whats-App-Image-2026-10-08-at-3-21-29-PM-(1).jpg", "https://i.postimg.cc/DwCFk16j/Whats-App-Image-2026-10-08-at-3-21-29-PM.jpg"] },
+      { id: 7, title: "عباية قطعة كوبرا - 7", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا 🩵", images: ["https://i.postimg.cc/q7V7ZsvY/Whats-App-Image-2026-10-08-at-3-50-51-PM.jpg", "https://i.postimg.cc/sDbfvY7W/Whats-App-Image-2026-10-08-at-3-50-51-PM-(4).jpg", "https://i.postimg.cc/KY2Z5m0C/Whats-App-Image-2026-10-08-at-3-50-51-PM-(1).jpg", "https://i.postimg.cc/76Pwpmrr/Whats-App-Image-2026-10-08-at-3-50-51-PM-(3).jpg", "https://i.postimg.cc/kGB95G5S/Whats-App-Image-2026-10-08-at-3-50-51-PM-(2).jpg"] },
+      { id: 8, title: "عباية قطعة كوبرا - 8", category: "cobra", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCobra, badge: "كوبرا 💛", images: ["https://i.postimg.cc/dtCpHTN4/Whats-App-Image-2026-10-08-at-4-01-34-PM.jpg", "https://i.postimg.cc/1tT7M9p0/Whats-App-Image-2026-10-08-at-4-01-34-PM-(1).jpg", "https://i.postimg.cc/2Smc09B0/Whats-App-Image-2026-10-08-at-4-01-34-PM-(2).jpg", "https://i.postimg.cc/t45rwd3V/Whats-App-Image-2026-10-08-at-4-01-34-PM-(4).jpg", "https://i.postimg.cc/vmZPs1Xs/Whats-App-Image-2026-10-08-at-4-01-34-PM-(3).jpg"] },
+
+      // --- Tailored Jacquard Group ---
+      { id: 9, title: "عباية قطعة جاكار - 1", category: "jacquard", priceText: "تبدأ من 19.000 ر.ع.", desc: captionJacquard, badge: "جاكار 🤎", images: ["https://i.postimg.cc/HW0m2qqy/Whats-App-Image-2026-10-08-at-2-52-06-PM.jpg", "https://i.postimg.cc/BnbGJXj3/Whats-App-Image-2026-10-08-at-2-52-06-PM-(1).jpg", "https://i.postimg.cc/Y9KcNR8z/Whats-App-Image-2026-10-08-at-2-52-05-PM-(1).jpg", "https://i.postimg.cc/V6jxKtVv/Whats-App-Image-2026-10-08-at-2-52-05-PM.jpg"] },
+      { id: 10, title: "عباية قطعة جاكار - 2", category: "jacquard", priceText: "تبدأ من 19.000 ر.ع.", desc: captionJacquard, badge: "جاكار ✨", images: ["https://i.postimg.cc/L6VtBs4G/Whats-App-Image-2026-10-08-at-1-37-17-PM.jpg", "https://i.postimg.cc/C5g8k3WJ/Whats-App-Image-2026-10-08-at-1-37-18-PM-(1).jpg", "https://i.postimg.cc/PqvvcfhG/Whats-App-Image-2026-10-08-at-1-37-19-PM-(2).jpg", "https://i.postimg.cc/FRgz57Bp/Whats-App-Image-2026-10-08-at-1-37-19-PM-(1).jpg", "https://i.postimg.cc/Kvsz2X0v/Whats-App-Image-2026-10-08-at-1-37-18-PM.jpg", "https://i.postimg.cc/hGVPTXcx/Whats-App-Image-2026-10-08-at-1-37-19-PM.jpg"] },
+      { id: 11, title: "عباية قطعة جاكار - 3", category: "jacquard", priceText: "تبدأ من 19.000 ر.ع.", desc: captionJacquard, badge: "جاكار 🎨", images: ["https://i.postimg.cc/XNRd0Cq1/Whats-App-Image-2026-10-08-at-3-52-57-PM-(5).jpg", "https://i.postimg.cc/2S86pkQM/Whats-App-Image-2026-10-08-at-3-52-57-PM-(4).jpg", "https://i.postimg.cc/W3r1b4bm/Whats-App-Image-2026-10-08-at-3-52-57-PM-(1).jpg", "https://i.postimg.cc/SK9hcvFq/Whats-App-Image-2026-10-08-at-3-52-57-PM-(2).jpg", "https://i.postimg.cc/nzYfP9Lb/Whats-App-Image-2026-10-08-at-3-52-57-PM-(3).jpg", "https://i.postimg.cc/ZnwtTk3L/Whats-App-Image-2026-10-08-at-3-52-57-PM.jpg"] },
+      { id: 12, title: "عباية قطعة جاكار - 4", category: "jacquard", priceText: "تبدأ من 19.000 ر.ع.", desc: captionJacquard, badge: "جاكار 🔥", images: ["https://i.postimg.cc/tCdDndmB/Whats-App-Image-2026-10-08-at-4-23-37-PM.jpg", "https://i.postimg.cc/YCb3br7j/Whats-App-Image-2026-10-08-at-4-23-38-PM-(3).jpg", "https://i.postimg.cc/nLr1WyV5/Whats-App-Image-2026-10-08-at-4-23-38-PM-(1).jpg", "https://i.postimg.cc/SKPGbgJW/Whats-App-Image-2026-10-08-at-4-23-38-PM-(2).jpg", "https://i.postimg.cc/K8qPt07d/Whats-App-Image-2026-10-08-at-4-23-38-PM-(4).jpg", "https://i.postimg.cc/nrG7r2cT/Whats-App-Image-2026-10-08-at-4-23-38-PM.jpg"] },
+
+      // --- Tailored Makhwar Group ---
+      { id: 13, title: "عباة المخور - 1", category: "makhwar", priceText: "تبدأ من 19.000 ر.ع.", desc: captionMakhwar, badge: "المخور 🌷", images: ["https://i.postimg.cc/xTWP1ZCT/Whats-App-Image-2026-10-08-at-2-56-46-PM-(3).jpg", "https://i.postimg.cc/9XkdLkyG/Whats-App-Image-2026-10-08-at-2-56-46-PM-(2).jpg", "https://i.postimg.cc/6pJdXGjq/Whats-App-Image-2026-10-08-at-2-56-45-PM.jpg", "https://i.postimg.cc/43wtV2Jf/Whats-App-Image-2026-10-08-at-2-56-46-PM.jpg"] },
+      { id: 14, title: "عباة المخور - 2", category: "makhwar", priceText: "تبدأ من 19.000 ر.ع.", desc: captionMakhwar, badge: "المخور 💕", images: ["https://i.postimg.cc/PJZ3KnVC/Whats-App-Image-2026-10-08-at-3-44-46-PM-(3).jpg", "https://i.postimg.cc/kX3hGDD2/Whats-App-Image-2026-10-08-at-3-44-46-PM.jpg", "https://i.postimg.cc/4xXLvMzL/Whats-App-Image-2026-10-08-at-3-44-46-PM-(2).jpg", "https://i.postimg.cc/d0x5YVg5/Whats-App-Image-2026-10-08-at-3-44-46-PM-(1).jpg", "https://i.postimg.cc/c4BTJmVz/Whats-App-Image-2026-10-08-at-3-44-46-PM-(4).jpg"] },
+
+      // --- Indonesian Cobra ---
+      { id: 15, title: "عباية قطعة كوبرا أندونيسي", category: "indonesian", priceText: "تبدأ من 19.000 ر.ع.", desc: captionIndonesian, badge: "أندونيسي 🐆", images: ["https://i.postimg.cc/yd1Fg4cc/Whats-App-Image-2026-10-08-at-3-27-41-PM-(1).jpg", "https://i.postimg.cc/2yJvK1J6/Whats-App-Image-2026-10-08-at-3-27-41-PM.jpg", "https://i.postimg.cc/P51ZSrMw/Whats-App-Image-2026-10-08-at-3-27-40-PM-(2).jpg", "https://i.postimg.cc/hjZ7XJKw/Whats-App-Image-2026-10-08-at-3-27-41-PM-(2).jpg", "https://i.postimg.cc/90vRBvRp/Whats-App-Image-2026-10-08-at-3-27-40-PM-(1).jpg", "https://i.postimg.cc/W1cqqcPs/Whats-App-Image-2026-10-08-at-3-27-40-PM.jpg"] },
+
+      // --- Crepe / Cobra Group ---
+      { id: 16, title: "عباية قطعة كريب أو كوبرا - 1", category: "crepe", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCrepe, badge: "كريب/كوبرا 🔥", images: ["https://i.postimg.cc/2SWJTvJ1/Whats-App-Image-2026-10-08-at-3-37-34-PM.jpg", "https://i.postimg.cc/wvqG6rB7/Whats-App-Image-2026-10-08-at-3-37-34-PM-(1).jpg", "https://i.postimg.cc/Fz1CSJ3d/Whats-App-Image-2026-10-08-at-3-37-35-PM-(1).jpg", "https://i.postimg.cc/g0dMD73b/Whats-App-Image-2026-10-08-at-3-37-35-PM.jpg", "https://i.postimg.cc/fLqBMTFF/Whats-App-Image-2026-10-08-at-3-37-34-PM-(2).jpg"] },
+      { id: 17, title: "عباية قطعة كريب أو كوبرا - 2", category: "crepe", priceText: "تبدأ من 19.000 ر.ع.", desc: captionCrepe, badge: "كريب/كوبرا 🖤", images: ["https://i.postimg.cc/kgsmsbDN/Whats-App-Image-2026-10-08-at-4-39-39-PM-(1).jpg", "https://i.postimg.cc/wTc8xmX4/Whats-App-Image-2026-10-08-at-4-39-39-PM-(5).jpg", "https://i.postimg.cc/hPbW4d8Q/Whats-App-Image-2026-10-08-at-4-39-39-PM-(8).jpg", "https://i.postimg.cc/kgf0KPhs/Whats-App-Image-2026-10-08-at-4-39-39-PM-(6).jpg", "https://i.postimg.cc/Pq70VzHQ/Whats-App-Image-2026-10-08-at-4-39-39-PM-(3).jpg", "https://i.postimg.cc/0jY3NTS1/Whats-App-Image-2026-10-08-at-4-39-39-PM-(4).jpg", "https://i.postimg.cc/BvjVFLFq/Whats-App-Image-2026-10-08-at-4-39-39-PM-(7).jpg", "https://i.postimg.cc/1XrCSpx9/Whats-App-Image-2026-10-08-at-4-39-39-PM.jpg"] }
+    ];
+
+    let currentSelectedProduct = null;
+    let cart = [];
+    let carouselState = {};
+    let uploadedImageName = "";
+
+    function renderProducts(items) {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+      
+      items.forEach(product => {
+        carouselState[product.id] = 0;
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        
+        let carouselHTML = `<div class="carousel-container" id="carousel-${product.id}">
+          <span class="product-badge">${product.badge}</span>`;
+        
+        if (product.images.length > 1) {
+          carouselHTML += `<button class="carousel-arrow prev" onclick="moveSlide(${product.id}, -1)"><i class="fa-solid fa-chevron-right"></i></button>
+          <button class="carousel-arrow next" onclick="moveSlide(${product.id}, 1)"><i class="fa-solid fa-chevron-left"></i></button>`;
+        }
+
+        carouselHTML += `<div class="carousel-slide" id="slide-${product.id}">`;
+        product.images.forEach(imgUrl => {
+          carouselHTML += `<img src="${imgUrl}" alt="${product.title}" class="carousel-img" loading="lazy" onclick="openLightBox('${imgUrl}')">`;
+        });
+        carouselHTML += `</div>`;
+
+        if (product.images.length > 1) {
+          carouselHTML += `<div class="carousel-dots" id="dots-${product.id}">`;
+          product.images.forEach((_, idx) => {
+            carouselHTML += `<span class="dot ${idx === 0 ? 'active' : ''}" onclick="setSlide(${product.id}, ${idx})"></span>`;
+          });
+          carouselHTML += `</div>`;
+        }
+
+        carouselHTML += `</div>`;
+
+        card.innerHTML = carouselHTML + `
+          <div class="product-info">
+            <h3 class="product-title">${product.title}</h3>
+            <p class="product-desc">${product.desc}</p>
+            <div class="price-box">
+              <span class="price-label">${product.priceText}</span>
+              <span class="price-note">${product.isQuickSize ? '*تسليم فوري - فري سايز' : '*السعر النهائي يعتمد على التفصيل والتعديل'}</span>
+            </div>
+            <div class="action-buttons-group">
+              <button class="order-btn" onclick="openTailoringModal(${product.id})">
+                <i class="fa-solid ${product.isQuickSize ? 'fa-cart-plus' : 'fa-scissors'}"></i> ${product.isQuickSize ? 'اختيار الطول والطلب' : 'تحديد المقاس والطلب'}
+              </button>
+              <button class="share-btn" onclick="shareProduct(${product.id})" title="مشاركة العباية مع صديقتك">
+                <i class="fa-solid fa-share-nodes"></i>
+              </button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Carousel Controls
+    function moveSlide(productId, direction) {
+      const product = products.find(p => p.id === productId);
+      let currentIndex = carouselState[productId];
+      currentIndex += direction;
+      
+      if (currentIndex < 0) currentIndex = product.images.length - 1;
+      if (currentIndex >= product.images.length) currentIndex = 0;
+      
+      setSlide(productId, currentIndex);
+    }
+
+    function setSlide(productId, index) {
+      carouselState[productId] = index;
+      const slide = document.getElementById(`slide-${productId}`);
+      if(slide) {
+        slide.style.transform = `translateX(${index * 100}%)`;
+      }
+      
+      const dots = document.querySelectorAll(`#dots-${productId} .dot`);
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === index);
+      });
+    }
+
+    function filterCategory(cat) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      if (cat === 'all') renderProducts(products);
+      else renderProducts(products.filter(p => p.category === cat));
+    }
+
+    // LightBox Zoom Image Logic
+    function openLightBox(imgUrl) {
+      document.getElementById('lightBoxImg').src = imgUrl;
+      document.getElementById('lightBoxModal').classList.add('active');
+    }
+
+    function closeLightBox() {
+      document.getElementById('lightBoxModal').classList.remove('active');
+    }
+
+    // Share Product Logic
+    function shareProduct(productId) {
+      const product = products.find(p => p.id === productId);
+      const text = `شوفي هذه العباية الروعة من متجر غزل كولكشن: ${product.title}\nسعرها: ${product.priceText}\n\n`;
+      const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + window.location.href)}`;
+      window.open(waUrl, '_blank');
+    }
+
+    // Toggle Gift Message Input
+    function toggleGiftMsgBox(chk) {
+      document.getElementById('giftMsgContainer').style.display = chk.checked ? 'block' : 'none';
+    }
+
+    // Image Upload Preview Function
+    function previewUploadedImage(input) {
+      const previewContainer = document.getElementById('previewContainer');
+      const previewImg = document.getElementById('imagePreview');
+      const labelText = document.getElementById('uploadLabelText');
+
+      if (input.files && input.files[0]) {
+        const file = input.files[0];
+        uploadedImageName = file.name;
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+          previewImg.src = e.target.result;
+          previewContainer.style.display = 'block';
+          labelText.innerText = "تم اختيار الصورة: " + file.name + " (اضغطي لتغييرها)";
+        }
+
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // Modals Dynamic Adjustment
+    function openTailoringModal(productId) {
+      currentSelectedProduct = products.find(p => p.id === productId);
+      document.getElementById('modalProductTitle').innerText = (currentSelectedProduct.isQuickSize ? 'طلب: ' : 'تفصيل: ') + currentSelectedProduct.title;
+      
+      const fullGroup = document.getElementById('fullMeasurementsGroup');
+      const quickGroup = document.getElementById('quickLengthGroup');
+      const subTitle = document.getElementById('modalSubTitle');
+      const estText = document.getElementById('deliveryEstText');
+
+      if (currentSelectedProduct.isQuickSize) {
+        fullGroup.style.display = 'none';
+        quickGroup.style.display = 'block';
+        subTitle.innerText = 'اختاري الطول الكلي فقط (الباقي فري سايز)';
+        estText.innerText = 'التوصيل المتوقع خلال: 5 - 7 أيام عمل';
+      } else {
+        fullGroup.style.display = 'block';
+        quickGroup.style.display = 'none';
+        subTitle.innerText = 'أدخلي قياساتكِ التفصيلية بالإنش (Inches)';
+        estText.innerText = 'التاريخ المتوقع لانتهاء التفصيل والتسليم: خلال 7 - 14 يوم عمل';
+      }
+
+      document.getElementById('tailoringModal').classList.add('active');
+    }
+
+    function closeTailoringModal() {
+      document.getElementById('tailoringModal').classList.remove('active');
+      document.getElementById('tailoringForm').reset();
+      document.getElementById('giftMsgContainer').style.display = 'none';
+    }
+
+    function openCustomDesignModal() {
+      document.getElementById('customDesignModal').classList.add('active');
+    }
+
+    function closeCustomDesignModal() {
+      document.getElementById('customDesignModal').classList.remove('active');
+      document.getElementById('previewContainer').style.display = 'none';
+      document.getElementById('uploadLabelText').innerText = 'اضغطي هنا لاختيار صورة العباية';
+      uploadedImageName = "";
+    }
+
+    function submitTailoringForm(e) {
+      e.preventDefault();
+      let item = {};
+      const isGift = document.getElementById('giftPackaging').checked;
+      const giftMsg = isGift ? (document.getElementById('giftCardMsg').value || 'هدية خاصة') : '';
+
+      if (currentSelectedProduct.isQuickSize) {
+        item = {
+          product: currentSelectedProduct,
+          sleeve: 'فري سايز (Free Size)',
+          bust: 'فري سايز (Free Size)',
+          length: document.getElementById('totalLengthQuick').value + ' إنش',
+          notes: document.getElementById('designNotes').value || 'لا يوجد',
+          gift: isGift ? `نعم 🎁 (رسالة الإهداء: "${giftMsg}")` : 'لا'
+        };
+      } else {
+        item = {
+          product: currentSelectedProduct,
+          sleeve: (document.getElementById('sleeveLength').value || 'غير محدد') + ' إنش',
+          bust: (document.getElementById('bustCirc').value || 'غير محدد') + ' إنش',
+          length: (document.getElementById('totalLengthFull').value || 'غير محدد') + ' إنش',
+          notes: document.getElementById('designNotes').value || 'لا يوجد',
+          gift: isGift ? `نعم 🎁 (رسالة الإهداء: "${giftMsg}")` : 'لا'
+        };
+      }
+
+      cart.push(item);
+      updateCartUI();
+      closeTailoringModal();
+      toggleCart();
+    }
+
+    function updateCartUI() {
+      document.getElementById('cartCount').innerText = cart.length;
+      const container = document.getElementById('cartItemsContainer');
+      container.innerHTML = '';
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p style="text-align:center; color: var(--text-muted); margin-top:2rem;">سلة الطلبات فارغة حالياً</p>';
+        return;
+      }
+
+      cart.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+          <i class="fa-solid fa-trash remove-item" onclick="removeFromCart(${index})"></i>
+          <div class="cart-item-title">${item.product.title}</div>
+          <div class="cart-item-detail"><strong>طول الكم:</strong> ${item.sleeve}</div>
+          <div class="cart-item-detail"><strong>محيط الصدر:</strong> ${item.bust}</div>
+          <div class="cart-item-detail"><strong>الطول الكلي:</strong> ${item.length}</div>
+          <div class="cart-item-detail"><strong>تغليف هدية:</strong> ${item.gift}</div>
+          <div class="cart-item-detail"><strong>ملاحظات:</strong> ${item.notes}</div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCartUI();
+    }
+
+    function toggleCart() {
+      document.getElementById('cartDrawer').classList.toggle('active');
+    }
+
+    // Submit Custom Design Request via WhatsApp
+    function submitCustomDesign(e) {
+      e.preventDefault();
+      const fabric = document.getElementById('customFabric').value;
+      const sleeve = document.getElementById('customSleeve').value || 'غير محدد';
+      const bust = document.getElementById('customBust').value || 'غير محدد';
+      const length = document.getElementById('customLength').value || 'غير محدد';
+      const notes = document.getElementById('customNotes').value || 'لا يوجد';
+      
+      const imageStatus = uploadedImageName ? `تم تحديد ملف (${uploadedImageName}) - سأرفق الصورة فوراً عبر زر المرفقات 📎 بالواتساب` : 'سأقوم بإرفاق صورة العباية مباشرة في المحادثة الآن';
+
+      let msg = `*طلب تفصيل تصميم خاص من صورة (غزل كولكشن)*\n\n`;
+      msg += `• *صورة التصميم:* ${imageStatus}\n`;
+      msg += `• *نوع القماش المطلوب:* ${fabric}\n`;
+      msg += `• *طول الكم (من نص الرقبة):* ${sleeve} إنش\n`;
+      msg += `• *محيط الصدر:* ${bust} إنش\n`;
+      msg += `• *الطول الكلي:* ${length} إنش\n`;
+      msg += `• *الملاحظات والتعديلات:* ${notes}\n\n`;
+      msg += `أرجو موافاتي بمدى إمكانية التنفيذ والتكلفة الإجمالية وسأقوم بإرفاق الصورة فوراً بالمحادثة وشكراً!`;
+
+      window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(msg)}`, '_blank');
+      closeCustomDesignModal();
+    }
+
+    // Checkout to WhatsApp
+    function checkoutToWhatsApp() {
+      if (cart.length === 0) {
+        alert('سلة الطلبات فارغة.');
+        return;
+      }
+
+      let message = `*طلب جديد من متجر غزل كولكشن (Ghazal Collection)*\n\n`;
+      message += `مرحباً، أود تأكيد الطلبات التالية:\n`;
+      message += `-----------------------------------\n`;
+
+      cart.forEach((item, idx) => {
+        message += `*${idx + 1}. ${item.product.title}*\n`;
+        message += `• طول الكم: ${item.sleeve}\n`;
+        message += `• محيط الصدر: ${item.bust}\n`;
+        message += `• الطول الكلي: ${item.length}\n`;
+        message += `• تغليف هدية: ${item.gift}\n`;
+        message += `• ملاحظات وتعديلات: ${item.notes}\n`;
+        message += `-----------------------------------\n`;
+      });
+
+      message += `\n*تأكيد الإيداع البنكي:* أنا جاهزة لتحويل مبلغ الإيداع وإرفاق إيصال التحويل البنكي هنا بالمحادثة لتأكيد بدء التفصيل أو الشحن الفوري.`;
+
+      window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    function toggleFaq(el) {
+      el.classList.toggle('active');
+    }
+
+    renderProducts(products);
+  </script>
+</body>
+</html>
